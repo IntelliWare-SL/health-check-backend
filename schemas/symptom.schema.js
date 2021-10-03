@@ -1,21 +1,25 @@
-const mongoose = require("mongoose");
-const dbUtill = require("../dbUtill/utills");
+const mongoose = require('mongoose')
+const dbUtill = require('../dbUtill/utills')
 
-const symptomSchema = new mongoose.Schema({
+const symptomSchema = new mongoose.Schema(
+  {
     symptom: {
-        type: String,
-        required: true
+      type: String,
+      required: false
     },
     disease: {
-        type: String,
-        required: true
-    }
-    ,
+      type: String,
+      required: true
+    },
     archived: {
-        type: Boolean,
-        default: false
+      type: Boolean,
+      default: false
     }
+  },
+  { timestamps: true }
+)
 
-}, {timestamps: true});
+module.exports = mongoose.model(dbUtill.SYMPTOM, symptomSchema)
 
-module.exports = mongoose.model(dbUtill.SYMPTOM, symptomSchema);
+//hiwasdfjlsdf
+//sdfsdfsdfsdfdsf
