@@ -34,5 +34,10 @@ const doctorSchema = new mongoose.Schema(
 
 module.exports = mongoose.model(dbUtill.DOCTOR, doctorSchema)
 
+<<<<<<< HEAD
+//sdfsadfhsjdf
+//sdfjhsjdfsdfasssss
+=======
 //hello hi therer
 
+>>>>>>> a9d777a50cac9138496461bc9d7fb498c6be0616
